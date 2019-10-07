@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html"><i class="fas fa-clock fa-2x">'click</i></a>
+            <a href="login.html"><i class="fas fa-user fa-1x icon"></i></a>
+        </nav>
+    </header>
+    <section>
+        <h2>REGÍSTRATE</h2>
+        <form action="">
+            <input type="text" id="name" placeholder="Nombre" />
+            <input type="text" id="city" placeholder="Ciudad" />
+            <select name="categoria">
+                <option disabled selected>¿Qué ofreces?</option>
+                <option value="1">Terapia</option>
+                <option value="2">Jardineria</option>
+                <option value="3">Informática</option>
+                <option value="4">Música</option>
+                <option value="5">Idiomas</option>
+                <option value="6">Cocina</option>
+                <option value="7">Cuidado</option>
+                <option value="8">Actividades Deportivas</option>
+                <option value="9">Transporte</option>
+            </select>
+                            <!--hacemos el input email type text para que no moleste la validación-->
+            <input type="text" id="email" placeholder="Email" />
+            <input type="password" id="password" placeholder="******" />
+            <input type="password" id="repeat-password" placeholder="******" />
+            <button type="submit" class="button" id="signup-button" disabled onclick="signup.saveData(event)">Signup</button>
+        </form>
+
+        <div>
+            <p>¿Ya estás registrado? <a href="login.html">Incia Sesión</a></p>
+        </div>
+
+        <div class="errors-container">
+        </div>
+    </section>
+    
+    <script></script>
+    <script></script>
+    <script></script>
+
+</body>
+</html>

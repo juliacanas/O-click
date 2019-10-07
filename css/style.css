@@ -1,0 +1,85 @@
+/* --- RESET --- */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    cursor: url('../images/gam1282.cur'), auto;	
+    box-sizing: border-box;
+}
+
+header {
+    height: 700px;
+}
+
+.header-background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.eslogan-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.eslogan-section > a {
+    text-decoration: none;
+}
+
+.navbar{
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar > a {
+    color: black;
+}
+
+.eslogan {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 90px;
+    line-height: 1.5em;
+}
+
+.article-section {
+    height: 700px;  
+    /*background-color:*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.box{
+    text-align: center;
+    width: 60%;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box > h2 {
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+
+.border-bottom {
+    border-bottom: 1px solid black;
+}
+
+
+.box > p {
+    font-size: 2rem;
+    font-weight: 100;
+}
