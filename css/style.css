@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 
@@ -27,12 +28,18 @@
     justify-content: space-around;
 }
 
-.eslogan-section > a {
+.signup-btn {
     text-decoration: none;
     color: black;
     padding: 10px 20px;
     margin-top: 40px;
     border: 1px solid black;
+}
+
+.faqs-link {
+    text-decoration: none;
+    margin-top: 80px;
+    color: white;
 }
 
 .navbar{
@@ -54,6 +61,12 @@
 .fas {
     color: black;    
 }
+
+/*.home-login {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 15px;
+}*/
 
 .eslogan {
     font-size: 3.5rem;
@@ -95,6 +108,9 @@
     margin-top: 15px;
 }
 
+.span-faqs {
+    margin-top: 100px;
+}
 
 /*////////////////////////////////SIGNUP*/
 
@@ -105,7 +121,6 @@
 }
 
 .signup-div{
-    /*height: 500px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,10 +148,66 @@
     margin-bottom: 15px;
 }
 
-#signup-button {
+.button {
     margin-top: 25px;
     padding: 5px 20px;
 }
 
 /*////////////////////////////LOGIN//////////////*/
 
+
+
+/*/////////////////////////////FAQS/////////////////////*/
+
+.faqs{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.faq{
+    padding: 5px 15px;
+}
+
+.faq-question > h3{
+    font-size: 1rem;
+    font-weight: 100;
+    width: 80%;    
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(150,150,150);
+    padding: 5px 10px;
+}
+
+.faq-question > .faq-arrow{
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    transition: all ease 0.6s; 
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: rgb(150,150,150);
+}
+
+.faq-answer{
+    height: 0;
+    opacity: 0;    
+    overflow: hidden;
+    transition: all ease 0.8s; 
+    padding: 5px 15px;   
+}
+
+.faqs > .toggle-faq-on > .faq-answer {
+    height: auto;
+    opacity:1;
+    transition: all ease 0.8s;
+    padding: 5px 15px;
+}
+
+.faqs > .toggle-faq-on > .faq-question > .faq-arrow {
+    transform: rotate(225deg);
+    transition: all ease 0.6s;
+}
