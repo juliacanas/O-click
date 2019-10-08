@@ -5,18 +5,19 @@
 *::before{
     margin: 0;
     padding: 0;
-    cursor: url('../images/gam1282.cur'), auto;	
     box-sizing: border-box;
 }
 
-header {
-    height: 700px;
-}
+
+/*////////////////////////////////HOME*/
+
 
 .header-background{
+    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /*filter: grayscale(80%);*/
 }
 
 .eslogan-section {
@@ -28,6 +29,10 @@ header {
 
 .eslogan-section > a {
     text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 40px;
+    border: 1px solid black;
 }
 
 .navbar{
@@ -36,17 +41,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 15px;
 }
 
-.navbar > a {
+.o-click{
     color: black;
+    font-family: 'Shadows Into Light Two', cursive;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fas {
+    color: black;    
 }
 
 .eslogan {
-    color: white;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 140px;
     line-height: 1.5em;
 }
 
@@ -70,16 +82,61 @@ header {
 
 .box > h2 {
     font-size: 3rem;
-    padding-bottom: 30px;
 }
 
 
 .border-bottom {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(80,80,80);
 }
 
 
-.box > p {
-    font-size: 2rem;
+.box > div > p {
     font-weight: 100;
+    margin-top: 15px;
 }
+
+
+/*////////////////////////////////SIGNUP*/
+
+
+
+.categoria{
+    display: block;
+}
+
+.signup-div{
+    /*height: 500px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-signup{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-div > h2 {
+    margin-bottom: 30px;
+}
+
+.link-login {
+    margin-top: 30px;
+}
+
+.form-signup > input {
+    margin-bottom: 15px;
+}
+
+#signup-button {
+    margin-top: 25px;
+    padding: 5px 20px;
+}
+
+/*////////////////////////////LOGIN//////////////*/
+
