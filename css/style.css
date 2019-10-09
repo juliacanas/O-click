@@ -180,6 +180,7 @@
 
 option {
     color: rgb(41, 41, 41);
+    border: 0;
 }
 
 .errors-container > p {
