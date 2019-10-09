@@ -22,7 +22,7 @@ const getImageApi = async () => {
         //console.log("The data we got from the server:", arrayOfResponses[0].concat(arrayOfResponses[1]))
 
         arrayOfResponses[0].concat(arrayOfResponses[1]).forEach(image => {
-            if (image.id === "882") {
+            if (image.id === "823") {
                 imagesArray.push(image.download_url);
                 console.log(imagesArray)
                 let randImg = imagesArray[Math.floor(Math.random() * imagesArray.length)];
