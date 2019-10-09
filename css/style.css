@@ -36,11 +36,12 @@
     margin-top: 40px;
     border: 1px solid white;
     font-size: 1.3rem;
+    background-color: rgba(255,255,255, 0.2)
 }
 
 .faqs-link {
     text-decoration: none;
-    margin-top: 120px;
+    margin-top: 90px;
     color: white;
     font-size: 20px;
 }
@@ -114,8 +115,9 @@
 }
 
 .background-main{
-    background-color: rgb(41, 41, 41)
+    background-color: rgb(75, 75, 75)
 }
+
 
 /*////////////////////////////////SIGNUP*/
 
@@ -127,6 +129,9 @@
 .categoria{
     display: block;
     color: rgb(41, 41, 41);
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .signup-div{
@@ -134,10 +139,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 .form-signup{
-    width: 70%;
+    width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,7 +156,9 @@
     border: 0;
     margin-bottom: 15px;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 35px;
 }
 
 .signup-div > h2 {
@@ -167,6 +175,22 @@
     padding: 5px 20px;
     color: rgb(41, 41, 41);
     font-size: 1rem;
+    border-radius: 5px;
+}
+
+option {
+    color: rgb(41, 41, 41);
+}
+
+.errors-container > p {
+    padding: 5px 10px;
+    background-color: brown;
+    margin: 10px;
+}
+
+.errors-container p.correct-message {
+    background-color: rgb(47, 164, 93);
+    
 }
 
 /*////////////////////////////LOGIN//////////////*/
@@ -176,7 +200,7 @@
 /*/////////////////////////////FAQS/////////////////////*/
 
 .faqs{
-    margin-bottom: 50px;
+    height: 600px;
 }
 
 .faq{
@@ -229,4 +253,43 @@
     transition: all ease 0.6s;
 }
 
+
+@media screen and (min-width: 768px){
+    .navbar{
+        height: 110px;
+        /*background-color: rgba(255, 255, 255, 0.6);*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+
+    /*.border-right{
+        border-right: 1px solid rgb(80,80,80);
+    }*/
+    .border-bottom {
+        border-bottom: 0;
+        border-right: 1px solid rgb(80,80,80);
+    }
+    
+    .article-section{
+        flex-direction: row;
+        height: 250px;
+        
+    }
+
+    .box{
+        align-items: flex-start;
+        padding: 0 15px;
+    }
+
+    .form-signup {
+        width: 320px;
+    }
+
+   .faqs{
+       width:60%;
+       margin: 0 auto;
+   }
+}
 

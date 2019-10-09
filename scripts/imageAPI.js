@@ -4,24 +4,32 @@
 const getImageApi = async () => {
     let imagesArray = [];
     const container = document.querySelector('.header-background');
-    const image = await fetch("https://picsum.photos/v2/list?page=9&limit=100");
-    const toJson = await image.json();
-    console.log(toJson)//promise (que es tot d'objectes)
 
-    toJson.forEach(image =>{
-        if (image.id === "859"){
-            imagesArray.push(image.download_url);
-        }
-    })
+    const fetchData = () => {
+        const urls = [
+            "https://picsum.photos/v2/list?page=9&limit=100",
+            "https://picsum.photos/v2/list?page=8&limit=100"
+        ];
 
-    console.log(imagesArray)
-    /*toJson.forEach(image => {
-        imagesArray.push(image.download_url);
-    });*/
+        const allRequests = urls.map(url =>
+            fetch(url).then(response => response.json())
+        );
 
-    let randImg = imagesArray[Math.floor(Math.random()*imagesArray.length)];
+        return Promise.all(allRequests);
+    };
 
-    container.style.backgroundImage = `url("${randImg}")`;
+    fetchData().then(arrayOfResponses =>
+        //console.log("The data we got from the server:", arrayOfResponses[0].concat(arrayOfResponses[1]))
+
+        arrayOfResponses[0].concat(arrayOfResponses[1]).forEach(image => {
+            if (image.id === "882") {
+                imagesArray.push(image.download_url);
+                console.log(imagesArray)
+                let randImg = imagesArray[Math.floor(Math.random() * imagesArray.length)];
+                container.style.backgroundImage = `url("${randImg}")`;
+            }
+        })
+    );
 
 }
 
