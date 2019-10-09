@@ -101,7 +101,7 @@
 
 
 .border-bottom {
-    border-bottom: 1px solid rgb(80,80,80);
+    border-bottom: 1px solid rgb(143, 143, 143);
 }
 
 
@@ -265,12 +265,10 @@ option {
         padding: 0px 25px;
     }
 
-    /*.border-right{
-        border-right: 1px solid rgb(80,80,80);
-    }*/
+  
     .border-bottom {
         border-bottom: 0;
-        border-right: 1px solid rgb(80,80,80);
+        border-right: 1px solid rgb(143, 143, 143);
     }
     
     .article-section{
