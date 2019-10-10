@@ -4,6 +4,7 @@
 const getImageApi = async () => {
     let imagesArray = [];
     const container = document.querySelector('.header-background');
+    
 
     const fetchData = () => {
         const urls = [
@@ -13,11 +14,12 @@ const getImageApi = async () => {
 
         const allRequests = urls.map(url =>
             fetch(url).then(response => response.json())
-        );
-
-        return Promise.all(allRequests);
+        );    
+        
+        return Promise.all(allRequests);        
+        
     };
-
+    
     fetchData().then(arrayOfResponses =>
         //console.log("The data we got from the server:", arrayOfResponses[0].concat(arrayOfResponses[1]))
 
@@ -27,11 +29,12 @@ const getImageApi = async () => {
                 console.log(imagesArray)
                 let randImg = imagesArray[Math.floor(Math.random() * imagesArray.length)];
                 container.style.backgroundImage = `url("${randImg}")`;
-            }
+            } 
+
         })
     );
-
 }
 
 getImageApi();
+
 

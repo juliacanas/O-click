@@ -132,6 +132,8 @@
     width: 100%;
     border-radius: 5px;
     background-color: white;
+    border:0;
+    height: 35px;
 }
 
 .signup-div{
@@ -239,6 +241,8 @@ option {
     transition: all ease 0.8s; 
     padding: 5px 15px;  
     font-size: 1.2rem; 
+    background-color: rgb(255, 255, 255,0.2);
+    border-radius: 5px;
 }
 
 .faqs > .toggle-faq-on > .faq-answer {
@@ -253,6 +257,32 @@ option {
     transform: rotate(225deg);
     transition: all ease 0.6s;
 }
+
+
+
+.list-profiles {
+    width: 100%;
+}
+
+.list-profiles > article {
+    width: 80%;
+    padding: 10px 10px;
+    background-color: rgb(255, 255, 255,0.2);
+    margin: 30px 0;
+    border-radius: 5px;
+    
+}
+
+.list-profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-profiles > article > p{
+    margin-top: 10px;
+}
+
 
 
 @media screen and (min-width: 768px){
@@ -290,5 +320,32 @@ option {
        width:60%;
        margin: 0 auto;
    }
+
+   .list-profiles > article {
+    width: 40%;
+    margin:30px 30px;
+    }
+
+    .list-profiles {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: inherit;
+    justify-content: center;
+    }
+
+
 }
 
+@media screen and (min-width: 1024px){
+    .list-profiles > article {
+    width: 25%;
+    }
+
+    .list-profiles {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: inherit;
+    justify-content: center;
+    }
+    
+}
