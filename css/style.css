@@ -33,8 +33,9 @@
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    margin-top: 40px;
+    margin-top: 60px;
     border: 1px solid white;
+    border-radius: 5px;
     font-size: 1.3rem;
     background-color: rgba(255,255,255, 0.2)
 }
@@ -50,23 +51,23 @@
 
 .navbar > div {
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
 }
 
 .navbar-a {
     filter: invert(1);
+    padding: 0 5px;
 }
 
 .logo {
     filter: invert(1);
+    padding-top: 10px;
 }
 
 
 .eslogan {
     font-size: 3.5rem;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 150px;
     line-height: 1.5em;
     color: white;
     font-weight: bold;
