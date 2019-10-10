@@ -39,26 +39,23 @@
     background-color: rgba(255,255,255, 0.2)
 }
 
-.faqs-link {
-    text-decoration: none;
-    margin-top: 90px;
-    color: white;
-    font-size: 20px;
-}
-
 .navbar{
     height: 110px;
     /*background-color: rgba(255, 255, 255, 0.6);*/
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0px 15px;
 }
 
-.home-login {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    padding-bottom: 15px;
+.navbar > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.navbar-a {
+    filter: invert(1);
 }
 
 .logo {
@@ -347,5 +344,5 @@ option {
     align-items: inherit;
     justify-content: center;
     }
-    
+
 }
